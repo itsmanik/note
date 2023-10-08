@@ -1,0 +1,107 @@
+/*------------------- Global --------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+}
+
+.mainContainer {
+    background-color: #CFFBFF;
+    min-height: 100vh;
+}
+
+/*------------------- Navigation --------------------*/
+
+nav {
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.178);
+    padding: 0.8rem 3rem;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #0CAEBA, #12686F);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*------------------- Main --------------------*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, #014045, #12686F);
+    width: 25rem;
+    color: white;
+    gap: 1rem;
+    margin: 5rem 0;
+}
+
+form input,
+form textarea {
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.3rem;
+    outline: none;
+}
+
+form button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    align-self: center;
+    box-shadow: 0 0 5px 0px white;
+    padding: 0.4rem 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.notes {
+    justify-self: left;
+}
+
+/* NOTES */
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 90%;
+}
+
+.note {
+    background: linear-gradient(273deg, #014045, #12686F);
+    color: white;
+    padding: 1rem 1.7rem;
+    box-shadow: 1px 1px 8px -2px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.noteTitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.noteBody {
+    font-size: 1rem;
+    font-weight: 300;
+}   

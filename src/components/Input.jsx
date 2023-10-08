@@ -7,6 +7,7 @@ function Input(prop) {
         event.preventDefault();
         var title = document.getElementById("title").value;
         var body = document.getElementById("body").value;
+        if (title == "") return; 
         var obj = {
             title: title,
             body: body
